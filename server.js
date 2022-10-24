@@ -167,7 +167,7 @@ app.get("/que", async (req, res) => {
 
   //Sort
   if (req.query.sort) {
-    const sortBy = req.query.sort.split(",").joins(" ");
+    const sortBy = req.query.sort.split(",").join(" ");
     query = query.sort(sortBy);
   }
   //Sort by descending orderby adding a minnus sign to createdAt "-createdAt"
