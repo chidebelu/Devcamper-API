@@ -170,7 +170,7 @@ app.get("/que", async (req, res) => {
     const sortBy = req.query.sort.split(",").join(" ");
     query = query.sort(sortBy);
   }
-  //Sort by descending orderby adding a minnus sign to createdAt "-createdAt"
+  //Sort by descending order by adding a minus sign to createdAt "-createdAt"
   else {
     query = query.sort("-createdAt");
   }
